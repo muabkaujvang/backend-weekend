@@ -1,0 +1,16 @@
+ລະຫັດສະຖານະ:
+201,200,409,501,502,404
+
+//
+ Request: ຄືໂຕຮັບຂໍ້ມູນຈາກ front-end
+ Response: ຄືໂຕສົ່ງຂໍ້ມູນກັບໄປຫາ front-end
+
+ //
+ import User ໝາຍຄວາມວ່າ import ມາຈາກ file
+ import { } ໝາຍຄວາມວ່າ import ມາຈາກ function
+
+ //
+ Museum.findOne({_id}) ໃຊ້ດືງຂໍ້ມູນ ໂດຍຫລາຍເງື່ອນໄຂ
+ Museum.findById(_id) ດືງຂໍ້ມູນດ້ວຍເງື່ອນໄຂ ດຽວຄື ໄອດີ ເທົ່ານັ້ນ
+ .populate(['userId', 'galleryId']) ຖ້າເຫັນເປັນ ເຄື່ອງໝາຍ [] ຂອບສະແດງວ່າ join ຂໍ້ມູນຫຼາຍ table
+ .populate('userId') ຖ້າບໍ່ເຫັນ ເຄື່ອງຫຼາຍ [] ສະແດງວ່າ join ເງື່ອນໄຂດຽວ ຫຼື only a table
